@@ -5,10 +5,9 @@ from emora_stdm import DialogueFlow
 greetings = {
     'state': 'start',
     '`Hello, my name is Lyric.`': {
-        '#INT(Hi! How are you?, How are you doing?)': {
-            '"How are you?"': {
+        '[{hi, hello, greetings, salutations}]': {
+            '`It is a pleasure to meet you. How are you today?`': {
                 'state': 'ask-mood',
-
                 '[{good, great, okay, fine, fantastic}]': {
 
                     '"That\'s great! '
