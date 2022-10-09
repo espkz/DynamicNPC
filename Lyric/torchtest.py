@@ -1,3 +1,5 @@
+# utilizing framework from https://github.com/espkz/Dev_AIChatbot_NLP/blob/main/Chatbot.py
+
 import torch
 
 #class of the npc
