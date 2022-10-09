@@ -2,8 +2,7 @@ from emora_stdm import DialogueFlow
 
 # utilizing the test chatbot from way down yonder and adjusting it bit by bit
 # Notes: literally just copy-pasted lmao we'll get there
-chatbot = DialogueFlow('start')
-transitions = {
+greetings = {
     'state': 'start',
     '`Hello, my name is Lyric.`': {
         '#INT(Hi! How are you?, How are you doing?)': {
@@ -89,7 +88,8 @@ transitions = {
     }
 }
 
-chatbot.load_transitions(transitions)
+lyric = DialogueFlow('start')
+lyric.load_transitions(greetings)
 
 if __name__ == '__main__':
-    chatbot.run()
+    lyric.run()
