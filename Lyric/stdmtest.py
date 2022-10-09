@@ -5,7 +5,7 @@ from emora_stdm import DialogueFlow
 chatbot = DialogueFlow('start')
 transitions = {
     'state': 'start',
-    '"Hello."': {
+    '`Hello, my name is Lyric.`': {
         '#INT(Hi! How are you?, How are you doing?)': {
             '"How are you?"': {
                 'state': 'ask-mood',
